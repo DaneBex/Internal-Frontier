@@ -16,7 +16,7 @@ export const allPosts = [
     {
       slug: 'want-to-live-forever',
       title: 'Do we want to live forever?',
-      date: '2025-03-28',
+      date: 'N/A',
       category: 'Tech/Philosophy',
       readTime: '6 min',
     },

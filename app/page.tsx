@@ -15,7 +15,7 @@ export default function Home() {
       <TableHead className="w-[100px]">Name</TableHead>
       <TableHead>Category</TableHead>
       <TableHead>Date Created</TableHead>
-      <TableHead className="text-right">Amount</TableHead>
+      <TableHead className="text-right">Read Time</TableHead>
     </TableRow>
   </TableHeader>
   <TableBody className="w-full">
