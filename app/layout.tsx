@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Playfair_Display, Lora } from 'next/font/google'
+import Nav from "@/components/myui/Nav";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'],
+  variable: '--font-playfair',
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const lora = Lora({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-lora',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,8 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${lora.variable}`}>
+      <body className='font-Playfair transition-colors duration-300'>
+        <Nav />
         {children}
       </body>
     </html>
