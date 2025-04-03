@@ -1,5 +1,3 @@
-import DarkModeToggle from "@/components/myui/DarkModeToggle";
-
 export default function PostLayout({ children }: { children: React.ReactNode }) {
     return (
       <>
