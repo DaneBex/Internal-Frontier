@@ -1,4 +1,4 @@
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { QuoteRotator } from "@/quotes";
 import { allPosts } from "./posts";
 import ClickableRow from "@/components/myui/ClickableRow";
